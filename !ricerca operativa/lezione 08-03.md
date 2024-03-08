@@ -69,3 +69,5 @@ Dati le matrici $A$, $B \in \mathbb{R}^{m \times n}$, $\lambda \in \mathbb{R}$, 
 Data la matrice $A \in \mathbb{R}^{m \times n}$, la trasposta $A^T \in \mathbb{R}^{n \times m}$ e ha componenti $A^T_{ij} = A_{ji}$ per $i = 1, \ldots, m$, $j = 1, \ldots, n$.
 Per le matrici si utilizzano lettere latine maiuscole
 $A \in \mathbb{R}^{m \times n}$
+
+todo:(ampliare)
