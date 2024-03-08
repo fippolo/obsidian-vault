@@ -33,3 +33,39 @@ Dati $x, y \in \mathbb{R}^n$, $x ≤ y$ se e solo se $x_j ≤ y_j , j = 1, . . .
 
 
 Un insieme di vettori $\{x^1, x^2, . . . , x^m\}$ sono linearmente dipendenti se esistono $m$ scalari $λ_1, λ_2, . . . , λ_m$ non tutti nulli tali che $λ_1x^1 + λ_2x^2 + . . . + λ_mx^m = 0$
+
+alcune cose mancano vedere il file [[vettori_matrici.pdf]]
+
+### MATRICI
+indicate con lettere latine maiuscole
+
+Con ![[Pasted image 20240308124137.png]] si indica lo spazio delle matrici con $m$ righe ed $n$ colonne a componenti reali.
+$$ [ A \in \mathbb{R}^{m \times n} ] $$
+
+Per le matrici si utilizzano lettere latine maiuscole
+
+$A \in \mathbb{R}^{m \times n}$
+
+$A_{ij}$ è l'elemento della matrice $A$ nella riga $i$ e colonna $j$
+
+$$
+A = \begin{bmatrix}
+A_{11} & A_{12} & \cdots & A_{1j} & \cdots & A_{1n} \\
+A_{21} & A_{22} & \cdots & A_{2j} & \cdots & A_{2n} \\
+\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+A_{i1} & A_{i2} & \cdots & A_{ij} & \cdots & A_{in} \\
+\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+A_{m1} & A_{m2} & \cdots & A_{mj} & \cdots & A_{mn}
+\end{bmatrix}
+$$
+
+### Somma di due Matrici
+Date le matrici $A$, $B$, $C \in \mathbb{R}^{m \times n}$, la matrice $C = A + B$ ha componenti $C_{ij} = A_{ij} + B_{ij}$ per $i = 1, \ldots, m$, $j = 1, \ldots, n$.
+
+### Prodotto di uno Scalare per una Matrice
+Dati le matrici $A$, $B \in \mathbb{R}^{m \times n}$, $\lambda \in \mathbb{R}$, la matrice $B = \lambda A$ ha componenti $B_{ij} = \lambda A_{ij}$ per $i = 1, \ldots, m$, $j = 1, \ldots, n$.
+
+### Trasposta di una Matrice
+Data la matrice $A \in \mathbb{R}^{m \times n}$, la trasposta $A^T \in \mathbb{R}^{n \times m}$ e ha componenti $A^T_{ij} = A_{ji}$ per $i = 1, \ldots, m$, $j = 1, \ldots, n$.
+Per le matrici si utilizzano lettere latine maiuscole
+$A \in \mathbb{R}^{m \times n}$
