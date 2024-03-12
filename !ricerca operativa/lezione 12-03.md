@@ -44,4 +44,20 @@ esempio:
 Un semispazio in $\mathbb{R}^n$ è un insieme della forma
 $\{ x \in \mathbb{R}^n : p^Tx \leq k \}$,
 dove $p$ è un vettore diverso da 0 e $k$ è uno scalare.
-![[Pasted image 20240312115803.png]]
+![[Pasted image 20240312120832.png]]
+
+ ### insiemi poliedrali
+Un insieme poliedrale o poliedro è l'intersezione di un numero finito di semispazi chiusi. Un politopo è un poliedro limitato.
+
+Poiché un semispazio è espresso da una disuguaglianza quale $A_i^T x \leq b_i$, un insieme poliedrale è espresso da un sistema di disuguaglianze lineari $A_i^T x \leq b_i$, $i = 1, \ldots, m$. Una equazione è equivalente a due disuguaglianze, e quindi un insieme poliedrale può essere rappresentato da un numero finito di disequazioni
+
+$$
+P := \{x \in \mathbb{R}^n : Ax \leq b\}
+$$
+
+per una opportuna matrice $A \in \mathbb{R}^{m \times n}$ ed un opportuno vettore $b \in \mathbb{R}^m$.
+
+![[Pasted image 20240312121532.png]]
+anche la retta è un poliedro essendo l'intersezione di due semispazio
+![[Pasted image 20240312121805.png]]
+![[Pasted image 20240312121844.png]]
