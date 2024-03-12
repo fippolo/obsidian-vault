@@ -61,3 +61,17 @@ per una opportuna matrice $A \in \mathbb{R}^{m \times n}$ ed un opportuno vettor
 anche la retta è un poliedro essendo l'intersezione di due semispazio
 ![[Pasted image 20240312121805.png]]
 ![[Pasted image 20240312121844.png]]
+![[Pasted image 20240312123229.png]]![[Pasted image 20240312123216.png]]
+![[Pasted image 20240312123423.png]]
+![[Pasted image 20240312123934.png]]
+posso dire quindi che ogni punto del nostro poliedro è definibile come
+$$
+P := \{x \in \mathbb{R}^n : Ax \leq b\}
+$$
+![[Pasted image 20240312124252.png]]
+un poliedro non è necessariamente un insieme affine ma un poliedro è sempre un insieme affine 
+
+disuguaglianze
+la retta rossa è una disuguaglianza valida dato che contiene l'intero p in un solo semispazio
+mentre quella verde non è valida
+![[Pasted image 20240312125139.png]]
