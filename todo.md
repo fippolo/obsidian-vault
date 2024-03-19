@@ -4,3 +4,4 @@ formattare il pc:
 - vscode
 - intellij idea
 - salvarsi le foto e i video e gli screenshot di farcry
+![[Pasted image 20240319130719.png]]
