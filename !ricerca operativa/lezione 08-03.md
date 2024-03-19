@@ -70,4 +70,3 @@ Data la matrice $A \in \mathbb{R}^{m \times n}$, la trasposta $A^T \in \mathbb{R
 Per le matrici si utilizzano lettere latine maiuscole
 $A \in \mathbb{R}^{m \times n}$
 
-todo:(ampliare)
