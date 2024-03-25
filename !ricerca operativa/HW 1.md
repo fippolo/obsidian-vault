@@ -7,10 +7,37 @@ il macchinario che estrude i pellet in bobine può essere utilizzato solo per 10
 funzione obbiettivo: 
 max $x_1,x_2\ 40x_1 30x_2$ 
 soggetto a
-$x_1 + 2x_2 \leq 100$
-$x_1 + 2x_2 \leq 150$
+$2x_1 + x_2 \leq 82$
+$2x_1 + x_2 \leq 150$
 $x_1 + x_2 \leq 80$
 $x_1, x_2 \geq 0$
 
+![[Pasted image 20240321151145.png]]
 
-## niente non lo so fare
+possiamo osservare come la soluzione ottima sia interno a Z=3000 con un valore molto basso di $x_2$ e un valore molto alto di $x_1$, risolvendolo algoritmicamente su python ci riporta la soluzione ottima: 
+$x_1\ =\ 2$
+$x_2\ =\ 78$
+$Z = x_1*40 + x_2*30 = 2420$
+
+## esercizi 2
+Funzione obbiettivo $Z = x + y$
+vincoli:
+- $x_1+x_2 \leq 8$
+- $x_1+x_2 \geq 4$
+- $x_1 \geq 0$
+- $x_2 \geq 0$
+![[Pasted image 20240321153726.png]]
+in questo caso abbiamo infinite soluzioni ottime perché la funzione obbiettivo è parallela ad almeno uno dei vincoli
+
+## Esercizio 3
+
+Funzione obbiettivo $Z = x + y$
+vincoli:
+- $x_1+x_2 \leq 8$
+- $x_1+x_2 \geq 4$
+- $x_1 \geq 0$
+- $x_2 \geq 0$
+- $x_1 + x_2 \not= 8$
+![[Pasted image 20240321153726.png]]
+in questo caso non abbiamo soluzioni ottime perché i punti del vincolo $\leq8$ non sono soluzioni ammissibili
+
