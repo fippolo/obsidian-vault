@@ -28,7 +28,7 @@ L'ostacolo principale nell'asserto della calcolabilità di $f$ risiede nel probl
 
 Di conseguenza, non possiamo costruire un algoritmo generale che determina in modo affidabile e per ogni $x$ se $\varphi_x(x) \downarrow$. Senza la capacità di decidere in modo affidabile se $\varphi_x(x)$ termina per ogni $x$, non possiamo calcolare $f(x)$ in modo effettivo per ogni $x \in \mathbb{N}$.
 
-In conclusione, la funzione $f$ **non è calcolabile**. Questa risposta si giustifica formalmente con l'indecidibilità del problema dell'arresto, che impedisce di determinare in modo algoritmico e universale se $\varphi_x(x)$ termina per ogni input $x$.
+In conclusione, la funzione $f$ **non è calcolabile**. Questa risposta  si giustifica formalmente con l'indecidibilità del problema dell'arresto, che impedisce di determinare in modo algoritmico e universale se $\varphi_x(x)$ termina per ogni input $x$.
 
 ## Esercizio 3.
 ### Enunciare formalmente e dimostrare l'esistenza di una Macchina di Turing Universale

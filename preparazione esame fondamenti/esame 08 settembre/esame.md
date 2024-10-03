@@ -1,7 +1,7 @@
 ![[Pasted image 20240224160915.png]]
 ## Esercizio 1.
 ### Progettare un automa a stati finiti che realizza un distributore automatico di francobolli, accetta monete da 50,20 e 10 centesimi di Euro. Il prezzo del francobollo è di Euro 0,80 ed il distributore può dare un resto max di 20 centesimi
-![[gitVault/preparazione esame fondamenti/esame 08 settembre/es1]]
+![[vault/preparazione esame fondamenti/esame 08 settembre/es1]]
 
 ## Esercizio 2.
 ### Definire una macchina di Turing che decide il linguaggio $L = \{0^n 1^n | n > 0\}$  (utilizzare due stati speciali di arresto $Q_y$ e $Q_n$ per l'accettazione e il rifiuto della stringa, senza invece richiedere di ripulire il nastro e scrivere Si/No)
@@ -9,6 +9,7 @@
 
 ## Esercizio 3.
 ### Enunciare formalmente e dimostrare caratterizzazione alternative degli insiemi ricorsivamente enumerabili
+
 Gli insiemi ricorsivamente enumerabili (RE) sono una classe fondamentale nella teoria della calcolabilità e nella teoria della complessità computazionale. La caratterizzazione degli insiemi ricorsivamente enumerabili può essere presentata in diversi modi, riflettendo le varie prospettive da cui questi insiemi possono essere studiati. Di seguito, fornirò una formalizzazione e dimostrazione di alcune delle caratterizzazioni alternative degli insiemi RE.
 
 ### Definizione

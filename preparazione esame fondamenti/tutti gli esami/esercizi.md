@@ -16,4 +16,12 @@ non fatto, halting problem btw.
 
 ### esercizio 2.2
 #### Studiare l'insieme $$I = \{ i \in \mathbb{N} \mid \exists x, y \text{ tali che } \varphi_i(x) \neq \varphi_i(y) \}$$
+## esame fallito
+### Esercizio 1.
+Fissato un numero $k$ qualsiasi, dire se il seguente linguaggio è regolare:
 
+$L = \{a^n b^m \mid n \leq k, m \leq k\}$
+
+E questo?
+
+$L = \{a^k b^n c^m \mid n \geq 0, k \leq n, n \leq m\}$
