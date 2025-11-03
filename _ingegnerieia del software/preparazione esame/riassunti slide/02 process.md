@@ -1,5 +1,5 @@
 ## 1. Il Ciclo di Vita del Software
-
+A
 - **Definizione**: insieme degli stati che un prodotto attraversa dal concepimento alla dismissione.
 - **Attività principali** (workflow tipico):
     1. **Comunicazione** – analisi dei requisiti, vincoli e specifiche (per clienti e sviluppatori). Comprende studio di fattibilità, elicitation, validazione.
