@@ -62,8 +62,8 @@ L'IdS ha affinato e definito diversi tipi di sviluppo. Ognuno ha le sue peculiar
 Il processo non è di per se un fine. L'ipotesi "nascosta" è che adottando un processo di sviluppo **disciplinato ed organizzato** la qualità del prodotto e la sua economicità ne gioveranno.
 [^1]: [[#project/process:]]
 #### 3.4.1 processo - process perspective
-Un processo di sviluppo può essere osservato sotto **vari punti di vista**:
-- **Activity perspective**[^1] - definizione di cosa deve essere fatt0
+Un [[02 process]] può essere osservato sotto **vari punti di vista**:
+- **Activity perspective**[^1] - definizione di cosa deve essere fatto
 - **workflow perspective**[^1] - sequenza ed organizzazione delle varie attività
 - **data-flow perspective** - flusso delle informazioni tra le varie attività
 - **role/action perspecrive** - stabilisce chi fa cosa
@@ -72,11 +72,11 @@ Un processo di sviluppo può essere osservato sotto **vari punti di vista**:
 Processo e Prodotto non devono essere viste come due cose su piani ortogonali ma più come **due facce della stessa medaglia**.
 Ad esempio dato un prodotto le informazioni sul processo seguito permettono di **contestualizzare meglio "l'oggetto"** ed i suoi possibili ambiti d'uso. Dunque il processo seguito fa in un certo qual modo parte delle caratteristiche del prodotto finale
 
-## 5. etica
+## 5. Etica
 ![[Northrop_Grumman_logo_blue-on-clear_2020.svg.png | center | ]]
 
 ---
-## note
+## Note
 #### chiarificazioni 
 ##### project/process:
 Il **process** riguarda il _modo standard_ con cui si sviluppa il software: è la struttura stabile e ripetibile delle attività, le regole e le procedure che si seguono ogni volta (per esempio come si analizzano i requisiti, come si progetta, come si testa). È quindi qualcosa di relativamente **continuo e generale**.

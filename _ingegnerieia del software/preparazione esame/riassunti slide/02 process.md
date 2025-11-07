@@ -1,75 +1,154 @@
 ## 1. Il Ciclo di Vita del Software
-A
-- **Definizione**: insieme degli stati che un prodotto attraversa dal concepimento alla dismissione.
-- **Attività principali** (workflow tipico):
-    1. **Comunicazione** – analisi dei requisiti, vincoli e specifiche (per clienti e sviluppatori). Comprende studio di fattibilità, elicitation, validazione.
-    2. **Pianificazione** – valutazione di rischi, costi e tempi.
-    3. **Modellazione** – progettazione di architettura, dati, componenti, interfacce e algoritmi.
-        - Approcci:
-            - _Agile_: modelli ridotti e focalizzati.
-            - _Strutturati_: numerosi modelli grafici (UML: oggetti, sequenze, stati, flussi di dati).
-    4. **Costruzione** – implementazione in codice (OOP, design patterns) e verifica/validazione tramite tecniche statiche (ispezioni) e dinamiche (testing multilivello: unità, integrazione, sistema, accettazione, beta).
-    5. **Deployment e Manutenzione** – rilascio e aggiornamenti. Tre tipi di evoluzione:
-        - _Correttiva_ (bug fixing)
-        - _Adattiva_ (nuovi ambienti/tecnologie)
-        - _Perfettiva_ (miglioramenti funzionali o prestazionali).
+il **ciclo di vita di un software** è insieme degli stati che un prodotto attraversa dal concepimento alla dismissione.
+Un **processo di sviluppo software** si occupa delle strategie da adottare per la gestione del ciclo di vita di un prodotto software . In particolare identifica quando e chi deve fare cosa per raggiungere un determinato obbiettivo della gestione del ciclo di vita.
+## 2. Process Activities
+Tipicamente i differenti processi software si distinguono in base alla organizzazione delle differenti attività di sviluppo ([workflow perspective]([[01 introduzione#3.4.1 processo - process perspective]])) e da documenti/modelli che queste attività producono ([data-flow perspective]([[01 introduzione#3.4.1 processo - process perspective]]))
 
-👉 L’ingegneria del software offre una “cassetta degli attrezzi” (liste di attività e metodi), che l’ingegnere adatta al contesto.
+### 2.1 Attività principali:
+#### 2.1.1 Comunicazione 
+Capire cosa  il sistema deve fare, quali sono i vincoli a cui il sistema deve sottostare, differenti tipi di specifica (rivolta al costumer, rivolta allo sviluppatore). 
+Comprende studio di fattibilità (allo scopo di commprendere le funzionalità fondamentali che il sistema deve implementare), allicitazione dei requisiti ed analisi, specifica dei requisiti validazione.
+#### 2.1.2 Pianificazione
+valutazione di rischi, costi e tempi.
+#### 2.1.3 Modellazione
+derivare una descrizione:
+- del software che deve essere sviluppato e della sua architettura
+- dei dati che devono essere scambiati
+- componenti facenti parte del sistema
+- interafaccia tra i vari elementi del sistema 
+- algoritmi utilizzati
+Approcci al design:
+- Metodologie agili tendono a ridurre i modelli sviluppati nelle fasi
+- metodi strutturati tendono a sviluppare molti modelli usando notazioni grafiche (UML)
+	- tipici modelli in approcci strutturali:
+	  - modello ad ogetti
+	  - modello di sequenze
+	  - modello sa transizione degli stati
+	  - modello strutturale
+	  - modello del flusso dei dati
+
+#### 2.1.4 Costruzione 
+L'obbiettivo di questa attività è quello di mettere in atto azioni volte alla scrittura del codice di sistema, in "conformità" a quanto stabilito dai modelli definiti nelle attività di modellazione. (OO Programming, Design Patterns)
+##### 2.1.4.1 verifica e validazione
+verificare che il sistema soddisfa i requisiti e le esigenze del committente/utente tramite tecniche statiche e dinamiche.
+- testing di componente o unità
+- testing di intregazione
+- testing di sistema
+- testing di accettazione (alpha testing)
+- beta testing 
+#### 2.1.5 Deployment e Manutenzione
+La manutenzione riguarda le attività messi in atto sul software già rilasciato.
+tipi di evoluzione:
+- correttivo (bug fixing)
+- adattivo (nuovi ambienti/tecnologie)
+- perfettivo (miglioramenti funzionali o prestazionali).
+
+---
+### 2.2 In definitiva
+L’ingegneria del software intende fornire, tra le altre cose, molte “liste
+della spesa” che stabiliscono cosa debba essere fatto al fine di
+raggiungere determinati obiettivi. L’ingegnere del software sceglie la
+“spesa” più adatta alle sue esigenze!!
 
 ---
 
-## 2. Processi di Sviluppo Software
-
+## 3.Processi di Sviluppo Software
 Un **processo software** è la strategia organizzata di attività che porta alla produzione di un sistema. Non esiste un modello universale: ogni organizzazione adatta il proprio processo in base a persone, strumenti e obiettivi.
+### 3.1 modelli di processo
+principali modelli di processo discussi (categorie):
+- modello a cascata (waterfall)
+- modelli evolutivi
+- modelli iterativi
+- model driven development (mdd)
+- sviluppo tramite metodi formali (cleanroom development, B method, Model Driven Development)
+Nella realtà spesso processi utilizzati sono una commistione dei diversi modelli
+### 3.2 process perspectives
+Un processo di sviluppo può essere tipicamente analizzato secondo 4 diverse prospettive:
+- #### 3.2.1 Activities perspective
+  definisce di quali attività si compone un processo
+- #### 3.2.2 Workflow perspective
+  Definisce le relazioni temporali tra le attività che devono essere svolte nonché le possibili condizioni che è necessario verificare per avviare un'attività
+- #### 3.2.3 Data/Artefacts perspective
+  Definisce quali sono gli artefatti che devono essere prodotti dalle varie attività dunque quali sono gli artefatti che saranno prodotti al termine del progetto adottando lo specifico processo di sviluppo.
+- #### 3.2.4 Role/Action perspective
+  Definisce i ruoli necessari nell'organizzazione al fine di portare avanti un progetto in accordo al processo nonché le responsabilità di tali ruoli in relazione alle attività da compiere
+### 3.4 Cascata (Waterfall)
+Fasi dello sviluppo strutturate in accordo alle attività fondamentali:
+- Analisi e definizione dei requisiti
+- Progettazione del sistema e del software
+- Implementazione e test di unità
+- Integrazione e test di sistema
+- Istallazione e mantenimento
+le varie attività vengono ripetute diverse volte ma comunque congelate ad un certo punto, ogni una di queste fornisce manufatti alle fasi successive attraverso appositi documenti. Terminata un attività NON viene ulteriormente riconsiderata nel seguito. in generale auspicabile sovrapposizione dei vari team (se assegnati sulle fasi)
+per passaggio di informazioni.
+Conseguenze principali:
+- I requisiti vengono fissati ad un certo punto e mai più modificati
+- Prematura decisione sui requisiti rende il processo “sordo” alle successive richieste di adattamento dei requisiti da parte del cliente.
+- Processo fortemente documentato e guidato dal rilascio di documenti (document driven).
 
-### Prospettive di analisi
-- **Activities perspective** – quali attività compongono il processo.
-- **Workflow perspective** – relazioni temporali e condizioni di attivazione.
-- **Data/Artefacts perspective** – output attesi (documenti, modelli, codice).
-- **Role/Actions perspective** – ruoli, responsabilità e interazioni.
+- Vantaggi: struttura chiara, utile in contesti stabili.
+-  Svantaggi: poca flessibilità, difficoltà di adattamento a nuove esigenze.
+### 3.5 Processo Evolutivo
+Il prodotto viene sviluppato cercando dapprima di derivare un portotipo e poi per incrementi successivi fino a raggiungere un sistema soddisfacente.
+Il prototipo intende supportare le attività di comunicazione inserendo fasi di comunicazione con l'utente. I prototipi sono usa e getta ma spesso diventa prototipo da far evolvere.
+Conseguenze principali:
+- l'organizzazione del sistema tende ad essere poco strutturata a causa dei continui cambiamenti
+- induci probabili difficoltà in fasi di mantenimento
 
-### Principali modelli
+- Pro: migliora comunicazione con l’utente.
+- Contro: architetture spesso fragili, manutenzione complessa.
+### 3.6 Processi Iterative
+Cercano di fondere le strutture dei processi evolutivi e a cascata cercando di mantenere le qualità positive rimuovendo quelle negative.
+Basati sul concetto di iterazione  (la specifica si sviluppa con il
+sistema):
+- Rilascio incrementale
+- Sviluppo a spirale
+#### 3.6.1 Rilascio incrementale
+Il processo procede con tanti mini waterfall in sequenza dove ad ogni iterazione viene rilasciato un sistema funzionante che potrà essere utilizzato dal cliente. Si pianificano iterazioni successive introducendo via via nuove funzionalità. Una volta avviata un'iterazione deve essere portata a termine senza interferenze, incrementando il sistema di una porzione gestibile.
+Principali vantaggi:
+- Particolarmente efficace se team di sviluppo piccolo
+- clienti non devono aspettare rilascio finale prima di poter utilizzare il sistema
+- Uso sul prototipo comporta scoperta, definizione e modifica di requisiti
+- si riduce rischio di fallimento
+- funzionalità più importanti maggiormente testate
+### 3.6.2 Sviluppo a spirale
+Rappresentabile su un piano tramite una spirale dove ogni quadrante
+consiste di attività volte a:
+- Specificare gli obiettivi dell’iterazione ed itentificazione dei rischi
+- Valutare il rischio e definire techniche per la sua gestione
+- Procedere allo sviluppo ed alla validazione
+- Pianificazione, si procede a valutare la necessità di un’ulteriore iterazione.
+### 3.7 Model Driven Development
+Modelli vengono definiti, fatti evolvere mantenendo consistenza ed aggiungendo informazioni via via di più basso livello fino ad arrivare al codice. CIM (requisiti), PIM (design alto livello), PSM (design che tiene conto di dettagli della piattaforma di deployment).
 
-1. **Cascata (Waterfall)** – lineare e document-driven, fasi congelate una volta concluse.
-    - Vantaggi: struttura chiara, utile in contesti stabili.
-    - Limiti: poca flessibilità, difficoltà di adattamento a nuove esigenze.
-2. **Evolutivi (Prototyping)** – sviluppo attraverso prototipi e successive evoluzioni.
-    - Pro: migliora comunicazione con l’utente.
-    - Contro: architetture spesso fragili, manutenzione complessa.
-3. **Iterativi** – combinano struttura e flessibilità.
-    - _Rilascio incrementale_: piccoli waterfall consecutivi, rilascio di versioni utilizzabili a ogni iterazione.
-    - _Spirale_ (Boehm, 1988): gestione del rischio al centro, iterazioni pianificate su obiettivi, analisi rischi, sviluppo e validazione.
-4. **Model Driven Development (MDD)** – i modelli guidano lo sviluppo fino al codice.
-    - Livelli: CIM (requisiti), PIM (design alto livello), PSM (design legato alla piattaforma).
-5. **Unified Process (UP)** – processo standard associato a UML.
-    - Guidato da rischio, casi d’uso e architettura.
-    - Iterativo e incrementale.
-    - RUP (Rational Unified Process) è una sua implementazione commerciale.
+## 3.8 Il Processo Unificato
+L'UP è un processo industriale "standardizzato" per lo sviluppo del software:
+- è il processo di riferimento che si associa all'uso di UML
+- è free - descritto nel libro "The Unified Software Development Process"
+Caratteristiche:
+- Guidato dal rischio
+- Guidato dai casi d'uso
+- è incentrato sull'architettura
+- Processo iterativo incrementale
+L'UP è un processo generico e deve essere adattato per ogni singolo progetto, il *RUP* (rational unified process) è una particolare istanza di UP prodotto di Rational Corp. deve essere adattato ma è precisamente definito
 
----
+#### 3.8.1 Struttura dello Unified Process
 
-## 3. Struttura dello Unified Process
-
-- **Iterazioni**: mini-progetti completi (requisiti, analisi, design, implementazione, test). Timeboxed (2–3 settimane), producono **baseline** (artefatti stabili approvati).
+- **Iterazioni**: mini-progetti completi (requisiti, analisi, design, implementazione, test). Timeboxed (2–3 settimane), producono **baseline** (artefatti stabili approvati).![[Pasted image 20251107170821.png]]
+- Ogni iterazione genera una “baseline”, una baseline è un insieme di artefatti rivisti ed approvati che: Forniscono un base condivisa per ulteriore sviluppo, Possono essere modificati solo attraverso una procedura formale, Un incremento è la differenza tra la baseline generata ad una iterazione e quella generata all’iterazione successiva.
 - **Fasi principali**:
     1. **Inception** – definizione scopo, ambito, requisiti iniziali (10–20%), valutazione rischi/costi, business case, fattibilità.
     2. **Elaboration** – baseline eseguibile, analisi rischi, architettura stabile, casi d’uso definiti (≈80%), pianificazione dettagliata.
     3. **Construction** – sviluppo del sistema stabile e testato, pronto al rilascio. Include documentazione e manuali.
     4. **Transition** – beta testing, correzioni, rilascio finale, supporto e manuali aggiornati.
 
-Ogni fase termina con una **milestone**, che segna il raggiungimento degli obiettivi previsti.
-
+Ogni fase termina con una **milestone**, che segna il raggiungimento degli obiettivi previsti. (pag. 33)
+![[Pasted image 20251107170846.png]]
 ---
 
-## Sintesi
+## Note
 
-Il documento presenta una visione organica di **come gestire lo sviluppo software**:
-
-- il **ciclo di vita** scandisce le attività fondamentali (comunicazione, progettazione, implementazione, manutenzione);
-- i **processi di sviluppo** definiscono la strategia e l’organizzazione di tali attività;
-- diversi modelli (cascata, prototipazione, iterativi, MDD, UP) offrono approcci con punti di forza e limiti, adattabili a contesti diversi;
-- lo **Unified Process** fornisce un framework iterativo e architetturale, con attenzione a rischi, casi d’uso e qualità del prodotto.
-
-📌 L’obiettivo è permettere agli ingegneri del software di **conciliare qualità, efficienza e sostenibilità**, adattando processi e strumenti alle esigenze reali del progetto.
-
-Vuoi che crei anche per questo documento una **tabella comparativa dei modelli di processo** (Waterfall, Evolutivo, Iterativo, UP), con vantaggi, svantaggi e quando applicarli?
+### Chiarificazioni
+testing vs debugging
+alpha vs beta testing
+rilascio incrementale vs unified
