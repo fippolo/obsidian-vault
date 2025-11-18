@@ -34,8 +34,9 @@ verificare che il sistema soddisfa i requisiti e le esigenze del committente/ute
 - testing di componente o unità
 - testing di intregazione
 - testing di sistema
-- testing di accettazione (alpha testing)
-- beta testing 
+- testing di accettazione (alpha testing)[^1]
+- beta testing [^1]
+[^1]: [[#alpha vs beta testing]]
 #### 2.1.5 Deployment e Manutenzione
 La manutenzione riguarda le attività messi in atto sul software già rilasciato.
 tipi di evoluzione:
@@ -104,13 +105,14 @@ sistema):
 - Rilascio incrementale
 - Sviluppo a spirale
 #### 3.6.1 Rilascio incrementale
-Il processo procede con tanti mini waterfall in sequenza dove ad ogni iterazione viene rilasciato un sistema funzionante che potrà essere utilizzato dal cliente. Si pianificano iterazioni successive introducendo via via nuove funzionalità. Una volta avviata un'iterazione deve essere portata a termine senza interferenze, incrementando il sistema di una porzione gestibile.
+Il processo procede con tanti mini waterfall in sequenza dove ad ogni iterazione viene rilasciato un sistema funzionante che potrà essere utilizzato dal cliente[^2]. Si pianificano iterazioni successive introducendo via via nuove funzionalità. Una volta avviata un'iterazione deve essere portata a termine senza interferenze, incrementando il sistema di una porzione gestibile.
 Principali vantaggi:
 - Particolarmente efficace se team di sviluppo piccolo
 - clienti non devono aspettare rilascio finale prima di poter utilizzare il sistema
 - Uso sul prototipo comporta scoperta, definizione e modifica di requisiti
 - si riduce rischio di fallimento
 - funzionalità più importanti maggiormente testate
+[^2]:[[#rilascio incrementale vs unified]]
 ### 3.6.2 Sviluppo a spirale
 Rappresentabile su un piano tramite una spirale dove ogni quadrante
 consiste di attività volte a:
@@ -122,7 +124,7 @@ consiste di attività volte a:
 Modelli vengono definiti, fatti evolvere mantenendo consistenza ed aggiungendo informazioni via via di più basso livello fino ad arrivare al codice. CIM (requisiti), PIM (design alto livello), PSM (design che tiene conto di dettagli della piattaforma di deployment).
 
 ## 3.8 Il Processo Unificato
-L'UP è un processo industriale "standardizzato" per lo sviluppo del software:
+L'UP[^2] è un processo industriale "standardizzato" per lo sviluppo del software:
 - è il processo di riferimento che si associa all'uso di UML
 - è free - descritto nel libro "The Unified Software Development Process"
 Caratteristiche:
@@ -131,7 +133,7 @@ Caratteristiche:
 - è incentrato sull'architettura
 - Processo iterativo incrementale
 L'UP è un processo generico e deve essere adattato per ogni singolo progetto, il *RUP* (rational unified process) è una particolare istanza di UP prodotto di Rational Corp. deve essere adattato ma è precisamente definito
-
+[^2]:[[#rilascio incrementale vs unified]]
 #### 3.8.1 Struttura dello Unified Process
 
 - **Iterazioni**: mini-progetti completi (requisiti, analisi, design, implementazione, test). Timeboxed (2–3 settimane), producono **baseline** (artefatti stabili approvati).![[Pasted image 20251107170821.png]]
@@ -142,13 +144,105 @@ L'UP è un processo generico e deve essere adattato per ogni singolo progetto, i
     3. **Construction** – sviluppo del sistema stabile e testato, pronto al rilascio. Include documentazione e manuali.
     4. **Transition** – beta testing, correzioni, rilascio finale, supporto e manuali aggiornati.
 
-Ogni fase termina con una **milestone**, che segna il raggiungimento degli obiettivi previsti. (pag. 33)
+Ogni fase termina con una **milestone**, che segna il raggiungimento degli obiettivi previsti. Ogni fase può includere diverse iterazioni
 ![[Pasted image 20251107170846.png]]
+##### 3.8.1.1 Avvio (Inception)
+- lo scopo del sistema è stato definito (documento di alto livello con i requisiti principali)
+- definire l'ambito del progetto(I requisiti base del sistema sono stati catturati e concordati con i vari attori - Casi d'uso 10-20%)
+- Una visione architetturale è stata definita (documento iniziale di architettura)
+- una prima valutazione del rischio è stata derivata (documento o archivio di valutazione dei rischi)
+- una prima valutazione dei costi e dei tempi (pianificazione del progetto)
+- un caso illustrativo di business è stato prodotto con evidenzazione dei vantaggi (caso business)
+- fattibilità del progetto è stata confermata (definizione di uno o più prototipi)
+##### 3.8.1.2 Elaborazione (Elaboration)
+- Creare Baseline robusta ed eseguibile (la baseline è eseguibile)
+- Baseline eseguibile dimostra che i rischi sono stati identificati e risolti (modello statico UML, modello dinamico UML, casi d’uso)
+- Revisione della stima dei rischi (valutazione aggiornata)
+- Visione d’insieme del sistema stabilizzata (80 % dei casi d’uso definiti - documento descrittivo del sistema)
+- La parti hanno approvato la pianificazione di progetto pianificazione a livello di dettaglio tale da consentire formulazioni realistiche di tempi, costi e risorse richieste (pianificazione aggiornata)
+- Accordo finale tra le parti (Accordo firmato)
+##### 3.8.1.3 Costruzione (Costruction)
+- Software stabile e di qualità sufficiente ad essere rilasciato (prodotto software, modello UML, suite di test)
+- Verifica dei costi rispetto alla pianificazione (pianificazione del progetto)
+- Accordo tra le parti per il rilascio (manuale utente e descrizione del rilascio)
+##### 3.8.1.4 Transizione (Transition)
+- Il beta test è ultimato, le necessarie modifiche al software sono state effettuate, gli utenti concordano con l’affermare che il sistema è stato rilasciato con successo (prodotto software)
+- Gli utenti utilizzano attivamente il prodotto (pianificazione del supporto)
+- definizione delle strategie di supporto (manuali utente aggiornati)
+
 ---
 
 ## Note
-
 ### Chiarificazioni
-testing vs debugging
-alpha vs beta testing
-rilascio incrementale vs unified
+##### testing vs debugging
+La differenza fondamentale è questa:
+
+**Testing** e **Debugging** sono due attività diverse nel processo di sviluppo del software:
+
+| **Testing**                                                                    | **Debugging**                                                                   |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| Serve **a trovare gli errori** (bug).                                          | Serve **a capire e correggere** gli errori trovati.                             |
+| Viene fatto **per verificare** che il programma funzioni come previsto.        | Viene fatto **per analizzare** la causa dell’errore e **modificare il codice**. |
+| Può essere svolto anche da persone diverse dallo sviluppatore (ad es. tester). | È svolto quasi sempre dallo **sviluppatore** del codice.                        |
+| Produce **segnalazioni di bug** (es. messaggi di errore, test falliti).        | Produce **una nuova versione del codice corretta**.                             |
+| Risponde alla domanda: “**Funziona come dovrebbe?**”                           | Risponde alla domanda: “**Perché non funziona?**”                               |
+
+In breve:
+- **Testing = rilevare il problema**
+- **Debugging = risolvere il problema**
+Esempio semplice:
+1. Fai girare un programma e ottieni un output sbagliato → **Testing** ha rilevato l'errore.
+2. Analizzi il codice con stampe, breakpoint, ragionamento, trovi la riga sbagliata e la correggi → **Debugging**.
+
+##### alpha vs beta testing
+La differenza principale tra **Alpha Testing** e **Beta Testing** riguarda **quando** vengono eseguiti e **da chi**.
+
+|**Alpha Testing**|**Beta Testing**|
+|---|---|
+|Si svolge **internamente** all’azienda.|Si svolge **esternamente**, presso utenti reali.|
+|Viene fatto **prima** del rilascio ufficiale del software.|Viene fatto **subito prima** della versione definitiva (release).|
+|Partecipano **sviluppatori** e/o **tester interni**.|Partecipano **utenti finali** reali (clienti, community tester, ecc.).|
+|L’ambiente è **controllato** (laboratorio o macchine interne).|L’ambiente è **reale** (computer e contesto degli utenti).|
+|Lo scopo è **trovare bug tecnici** e problemi funzionali.|Lo scopo è **valutare l’usabilità**, la stabilità e la soddisfazione degli utenti.|
+|Può essere interrotto spesso per correggere errori.|Il software deve essere **abbastanza stabile**, le correzioni arrivano dopo i feedback.|
+
+**In breve:**
+- **Alpha testing** = controllo interno → “Il software funziona tecnicamente?”
+- **Beta testing** = prova con utenti reali → “Il software va bene in pratica?”
+**Esempio veloce:**
+- Una software house sviluppa una nuova app.
+- Prima la prova dentro l’azienda (alpha): corregge crash, bug, interfaccia.
+- Poi la rilascia a un gruppo di volontari pubblici (beta): raccoglie impressioni su facilità d’uso e problemi reali.
+##### rilascio incrementale vs unified
+**Rilascio Incrementale**
+Il **rilascio incrementale** è un **modo di consegnare il software**.
+- Il sistema finale è suddiviso in **più parti (incrementi)**.
+- Ogni incremento **aggiunge funzionalità** utilizzabili.
+- L’utente **riceve versioni parziali ma funzionanti** del software nel tempo.
+**Esempio:**
+1. Versione 1.0 → Registrazione e login
+2. Versione 1.1 → Sistema di ricerca
+3. Versione 1.2 → Pagamenti online
+4. Versione 2.0 → Statistiche avanzate
+Lo scopo è **rilasciare valore subito** e far crescere il sistema nei rilasci successivi.
+
+**Unified Process (UP)**
+L’**Unified Process (UP)** invece è un **modello di sviluppo**: descrive **come si organizza il lavoro** durante tutto il ciclo di vita del software.
+È **iterativo e incrementale**, e divide lo sviluppo in **4 fasi principali**:
+
+| Fase             | Scopo                                                    |
+| ---------------- | -------------------------------------------------------- |
+| **Inception**    | Capire cosa deve fare il sistema (requisiti principali). |
+| **Elaboration**  | Definire l’architettura di base e ridurre i rischi.      |
+| **Construction** | Costruire la maggior parte delle funzionalità.           |
+| **Transition**   | Consegnare agli utenti e fare rifiniture.                |
+
+Ogni fase è composta da **iterazioni** → mini cicli di sviluppo.
+**La differenza chiave**
+- Il **rilascio incrementale** riguarda **il risultato**: come e quando consegni le funzionalità.
+- L’**Unified Process** riguarda **il metodo**: come organizzi il lavoro e le iterazioni per arrivare al risultato.
+In altre parole:
+> **Rilascio Incrementale = Strategia di consegna del software.**  
+> **Unified Process = Metodo di sviluppo durante l’intero ciclo del progetto.**
+
+

@@ -38,7 +38,7 @@ Tre componenti fondamentali:
 
 ### Relazioni
 Indicano connessioni tra entità (associazioni, dipendenze, generalizzazioni, composizioni…).
-
+![[Pasted image 20251111214539.png]]
 ### Diagrammi
 Ogni diagramma è una **vista parziale** del sistema. UML prevede **13 tipologie di diagrammi**, che coprono aspetti strutturali (classi, componenti, deployment) e comportamentali (use case, sequenza, attività, stati).
 
@@ -59,22 +59,11 @@ Ogni diagramma è una **vista parziale** del sistema. UML prevede **13 tipologie
 ---
 
 ## 5. Architettura
+“*struttura organizzativa di un sistema, inclusa la sua*
+*scomposizione in parti, la loro coneettività, l’interazione, i meccanismi*
+*ed i principi guida che insieme formano il progetto del sistema stesso*”
 UML consente di rappresentare la **struttura organizzativa di un sistema**, includendo:
 - suddivisione in parti e sottosistemi,
 - connessioni e interazioni,
 - principi di progettazione e meccanismi di funzionamento.
-
-👉 In questo senso, UML non è solo un insieme di diagrammi, ma un **linguaggio per comunicare l’architettura e le decisioni progettuali**, favorendo collaborazione tra sviluppatori, analisti e stakeholder.
-
----
-
-## Sintesi
-
-Questo documento fornisce le basi per comprendere l’UML come **linguaggio di modellazione universale**:
-- standardizzato e diffuso,
-- usabile in diversi livelli di dettaglio (dalla bozza alla generazione di codice),
-- articolato in entità, relazioni e diagrammi,
-- estendibile e personalizzabile per contesti specifici,
-- orientato a rappresentare sia la struttura statica che il comportamento dinamico di un sistema.
-
-📌 L’obiettivo è permettere agli ingegneri del software di rappresentare in maniera chiara, condivisa e rigorosa sistemi complessi, ponendo le basi per una progettazione robusta e comunicabile.
+![[Pasted image 20251111215002.png]]
