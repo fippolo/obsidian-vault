@@ -9,23 +9,23 @@
 
 ---
 
-## 2. Come utilizzarlo
+## 2. Come Utilizzarlo
 
-UML consente di modellare un sistema visto come un insieme di entità interagenti, con tre principali approcci:
+UML consente di modellare un sistema visto come un insieme di entità interagenti, con tree principali approcci:
 - **UML come bozza** – per delineare idee e struttura preliminare.
 - **UML come progetto** – per descrivere in dettaglio l’architettura del sistema.
 - **UML per generazione automatica di codice** – in cui i modelli vengono trasformati in implementazioni.
 
-### Caratteristiche modellabili
+### Caratteristiche Modellabili
 - **Struttura Statica** – elementi e relazioni del sistema.
 - **Comportamento Dinamico** – ciclo di vita degli oggetti, interazioni e collaborazioni per erogare funzionalità.
 Concetto centrale: **oggetto** = entità con dati associati e funzionalità per manipolarli.
 
 ---
 
-## 3. Struttura di UML
+## 3. Struttura Di UML
 
-Tre componenti fondamentali:
+Tree componenti fondamentali:
 1. **Costituenti fondamentali** – entità, relazioni, diagrammi.
 2. **Meccanismi comuni** – tecniche trasversali per completezza, chiarezza e estensibilità.
 3. **Architettura** – modalità con cui UML descrive l’architettura complessiva del sistema.
@@ -36,11 +36,11 @@ Tre componenti fondamentali:
 - **Di raggruppamento** (package, sottosistemi).
 - **Informative** (note, vincoli).
 
-### Relazioni
+### [[06 UML relazioni|Relazioni]]
 Indicano connessioni tra entità (associazioni, dipendenze, generalizzazioni, composizioni…).
 ![[Pasted image 20251111214539.png]]
 ### Diagrammi
-Ogni diagramma è una **vista parziale** del sistema. UML prevede **13 tipologie di diagrammi**, che coprono aspetti strutturali (classi, componenti, deployment) e comportamentali (use case, sequenza, attività, stati).
+Ogni diagramma è una **vista parziale** del sistema. UML prevede **13 tipologie di diagrammi**, che coprono aspetti strutturali (classi, componenti, deployment) e comportamentali (use case, sequenza, attività, statuses).
 
 ---
 
