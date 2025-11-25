@@ -41,115 +41,56 @@ Serve per rappresentare **flussi di controllo e di oggetti**, mostrando come un�
 ### Contesto d’uso
 
 Un diagramma di attività può essere collegato a diversi elementi UML:
-
 - **Casi d’uso** (per descrivere scenari dinamici),
-    
 - **Classi** e **interfacce** (per rappresentare comportamenti interni),
-    
 - **Componenti** o **collaborazioni**,
-    
 - **Operazioni** (per specificare algoritmi o procedure).
-    
-
 ### Ruolo nel processo unificato (UP)
-
 - In **analisi**: modellazione grafica del flusso di un caso d’uso o di interazioni tra più casi.
-    
 - In **progettazione**: dettaglio di operazioni e algoritmi complessi.
-    
 - In **business modeling**: rappresentazione dei processi aziendali (alternativa o complementare al **BPMN 2.0**).
-    
-
----
-
 ## 3. Struttura di un Diagramma di Attività
-
+I diagrammi di attività (Activity Diagrams) modellano un processo come un’attività costituita da un insieme di nodi connessi da archi. La semantica è descritta tramite il formalismo delle Reti di Petri. Servono dunque a modellare aspetti del comportamento dinamico di un sistema.
 ### Tipi di nodi
-
 1. **Nodi di azione** – rappresentano operazioni elementari (esecuzioni, invii di segnali, chiamate, attese temporali).
-    
 2. **Nodi di controllo** – gestiscono il flusso logico (inizio, fine, decisioni, biforcazioni, unioni, sincronizzazioni).
-    
 3. **Nodi oggetto** – rappresentano la disponibilità o lo stato di dati e oggetti scambiati.
-    
-
 ### Tipi di archi
-
 - **Flussi di controllo**: definiscono la sequenza di esecuzione.
-    
 - **Flussi di oggetti**: trasportano dati o istanze tra azioni.
-    
 
 Ogni azione può essere vincolata da **pre-condizioni** e **post-condizioni** che ne determinano l’attivazione e la conclusione.
-
----
-
 ## 4. Relazione con i Casi d’Uso
 
-Un **diagramma di attività** può fornire una **visione compatta e grafica** del comportamento di un caso d’uso, sostituendo la descrizione testuale con una rappresentazione visuale del flusso.  
-Le **azioni** individuate in questa fase vengono poi **raffinate nella progettazione**, fino a corrispondere ad operazioni o metodi concreti.
-
----
-
+Un **diagramma di attività** può fornire una **visione compatta e grafica** del comportamento di un caso d’uso, sostituendo la descrizione testuale con una rappresentazione visuale del flusso.  Le **azioni** individuate in questa fase vengono poi **raffinate nella progettazione**, fino a corrispondere ad operazioni o metodi concreti.
 ## 5. Semantica e Controllo del Flusso
 
 La semantica si basa sui **token** (come nelle reti di Petri):
-
-- un token rappresenta il **flusso di controllo** o un **oggetto in transito**;
-    
-- un’azione si attiva se tutti i token richiesti sugli archi in ingresso sono disponibili e le condizioni locali sono vere.
-    
+- Un token rappresenta il **flusso di controllo** o un **oggetto in transito**;
+- Un’azione si attiva se tutti i token richiesti sugli archi in ingresso sono disponibili e le condizioni locali sono vere.
 
 Il passaggio di token è influenzato da:
-
 - **Post-condizioni** del nodo sorgente,
-    
 - **Condizioni di guardia** sugli archi,
-    
 - **Pre-condizioni** sul nodo di destinazione.
-    
-
----
-
 ## 6. Partizioni (Swimlanes)
-
 Le **partizioni** (o **swimlanes**) consentono di **organizzare le azioni** in base a:
-
 - **Attori o ruoli**,
-    
 - **Classi o componenti**,
-    
 - **Unità organizzative o sistemi esterni**.
-    
-
 Possono essere **annidate** per rappresentare la collaborazione tra più soggetti.
-
----
-
+![[Pasted image 20251124153004.png]]
 ## 7. Nodi di Azione
 
 ### Regole di attivazione
-
 - L’azione è attiva quando su **tutti gli archi entranti** è presente almeno un token e **tutte le precondizioni** sono vere.
-    
-
 ### Regole di uscita
-
 - L’azione emette token su tutti gli archi uscenti se la **post-condizione** risulta vera.
-    
-
 ### Tipologie di azioni
-
 - **Call Action** – invoca un’attività, operazione o comportamento;
-    
 - **Send Signal Action** – invia un segnale asincrono;
-    
 - **Accept Event Action** – attende un evento o segnale;
-    
 - **Accept Time Event** – gestisce eventi temporali, basati su scadenze o durate (es. “ogni 10 minuti”, “alla fine del mese”).
-    
-
----
 
 ## 8. Nodi di Controllo
 
@@ -157,17 +98,10 @@ Gestiscono il **flusso logico e sincronizzato** del processo.
 Principali nodi:
 
 - **Nodo iniziale** – punto di avvio del flusso;
-    
 - **Nodo finale dell’attività** – termina l’intero processo;
-    
 - **Nodo finale del flusso** – interrompe un solo percorso;
-    
 - **Nodo decisione/fusione** – scelta condizionale e ricongiungimento alternativo;
-    
 - **Nodo biforcazione/ricongiunzione** – controllo del parallelismo e della sincronizzazione.
-    
-
----
 
 ## 9. Nodi Oggetto
 
