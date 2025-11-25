@@ -1,7 +1,7 @@
 ## 1. Definizione
 Disciplina che si occupa di definire cosa un sistema debba fare, le sue proprietà essenziali ed i vincoli a cui deve rispondere. Scoprire, analizzare, documentare e validare i requisiti sono attività investigate dalla disciplina dell’ingegneria dei requisiti Attività che presentano forte interazione e comunicazione con il cliente. Dunque non soltanto attività dagli aspetti tecnici ma forti implicazioni socio-antropologiche (ci si riferisce a questa attività come “comunicazione”
 
-L’Ingegneria dei Requisiti è la **fase iniziale del ciclo di vita del software**, dedicata all’identificazione, analisi, specifica e validazione dei requisiti di un sistema.  
+L’Ingegneria dei Requisiti è la **fase iniziale del ciclo di vita del software**, dedicata all’identificazione, analisi, specifica e validazione dei requisiti di un sistema.
 Il suo scopo è **garantire che il sistema sviluppato soddisfi le reali necessità degli utenti e dei committenti**, evitando fraintendimenti, omissioni e conflitti.
 ### Motivazioni principali
 - Circa **il 40–60% dei fallimenti dei progetti software** deriva da una gestione inadeguata dei requisiti.
@@ -17,7 +17,7 @@ Il suo scopo è **garantire che il sistema sviluppato soddisfi le reali necessit
 
 ### Definizione generale
 
-Un **requisito** è una proprietà che il sistema deve possedere o un vincolo a cui deve sottostare.  
+Un **requisito** è una proprietà che il sistema deve possedere o un vincolo a cui deve sottostare.
 Può essere espresso in linguaggio naturale, diagrammi, tabelle o notazioni formali.
 ### Tipologie principali
 I requisiti vengono classificati a seconda del focus che ci si presegue nell'analisi:
@@ -30,8 +30,8 @@ I requisiti vengono classificati a seconda del focus che ci si presegue nell'ana
 	- Vincoli
 - Se ci si focalizza sull'origine:
 	- Requisiti di dominio
-### requisiti Utente e di  sistema
-Requisiti  utente:
+### Requisiti Utente e di sistema
+Requisiti utente:
 - Si rivolgono principalmente all'utente
 - Alto livello di astrazione
 - Usano linguaggio naturale e diagrammi
@@ -59,7 +59,7 @@ Un vincolo è un requisito organizzativo o tecnologico che restringe il modo in 
 ### Requisiti di dominio
 I requisiti di dominio riguardano quei requisiti che derivano direttamente dallo specifico dominio e o contesto applicativo
 Sono difficili da identificare perché ovvi al committente e spesso ignorati e non riportati.
-### come specificare i requisiti
+### Come specificare i requisiti
 Differenti techniche possibili ovviamente non esclusive (requisiti possono essere definiti e poi raffinati con diversi stili):
 - Informali: usano tipicamente linguaggi naturali
 - Semi formali: usano notazioni grafiche per cui la semantica non è sempre precisamente definita
@@ -70,14 +70,14 @@ Esistono diverse possibili sorgenti di ambiguità nell’uso del linguaggio natu
 - Sintattica: la frase ha più di un albero sintattico
 - Semantica: l’equivalente della frase nella logica dei predicati ha più di un’interpretazione
 - Pragmatica: l’interpretazione dipende dal contesto
-Problemi nell’uso di linguaggio naturale: 
-- Si basa sulla comune comprensione dei concetti nel sistema 
-- Troppo flessibile 
-- Difficile modularizzare requisiti scritti con linguaggio naturale 
-Uso di notazioni semi-formali o formali: 
-- Linguaggio Naturale Strutturato 
-- Linguaggi di Descrizione Progettuale 
-- Notazioni grafiche 
+Problemi nell’uso di linguaggio naturale:
+- Si basa sulla comune comprensione dei concetti nel sistema
+- Troppo flessibile
+- Difficile modularizzare requisiti scritti con linguaggio naturale
+Uso di notazioni semi-formali o formali:
+- Linguaggio Naturale Strutturato
+- Linguaggi di Descrizione Progettuale
+- Notazioni grafiche
 - Specifiche Matematiche
 ## Processo di Ingegneria dei requisiti
 Il **processo RE** è iterativo e ciclico: i requisiti si evolvono insieme alla comprensione del dominio e alle decisioni progettuali. Non esiste un processo definitivo per la definizione dei requisiti, ma le attività fondamentali sono tipicamente:
@@ -114,10 +114,25 @@ Elicitazione influenzata dalle caratteristiche dei processi cognitivi umani. In 
 - Rimozione
 - Distorsione
 - Generalizzazione
-#### scoperta dei requisiti
+#### Scoperta dei requisiti
 Punti di vista permettono di classificare gli attori. Questo permette di avere un’idea della copertura ottenuta sui possibili requisiti. Meglio intervistare 3 attori da gruppi differenti piuttosto che 10 da uno stesso gruppo. Tipicamente si distingue tra:
 - Punto di vista diretto: chi interagisce direttamente con il sistema
 - Punto di vista indiretto: chi non interagisce con il sistema ma è interessato al suo comportamento
 - Punto di vista di dominio: attori esperti del dominio applicativo
 ### Confine del Sistema e Attori
-Un attore rappresenta il ruolo che un'entità esterna assume quando interagisce con il sistema. La stessa entità potrà ricoprire più ruoli. 
+Un attore rappresenta il ruolo che un'entità esterna assume quando interagisce con il sistema. La stessa entità potrà ricoprire più ruoli.
+Sorgenti e destinazioni delle informazioni da e per il sistema devono essere presi sotto esame:
+- Persone
+- Altri sistemi esterni
+- Sensori e attuatori
+Gli attori interagiscono con li sistema per mezzo di specifiche interfacce, la cui specifica può essere pre-esistente:
+- Interfaccia uomo-macchina (HMI)
+- Interfacce software (api) e protocolli
+- Interfacce hardware
+### Classificazione per gli attori
+Dove cercare gli attori:
+- Attore primario: utilizza direttamente il sistema
+- Attore finale: vuole che il sistema sia utilizzato affinché vengano realizzati dei suoi obiettivi
+- Attore di supporto: offre un servizio al sistema
+- Attore fuori scena: ha un interesse nel comportamento del caso d’uso. Non rientra però tra gli attori menzionati
+### Tecniche accessorie
