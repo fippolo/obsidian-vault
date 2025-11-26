@@ -136,3 +136,150 @@ Dove cercare gli attori:
 - Attore di supporto: offre un servizio al sistema
 - Attore fuori scena: ha un interesse nel comportamento del caso d’uso. Non rientra però tra gli attori menzionati
 ### Tecniche accessorie
+- Brainstorming: generalmente associato all’esecuzione di WKS serve a far emergere idee innovative e visionarie
+- KJ Method: forma di brainstorming particolarmente utile in contesti di partecipanti eterogenei
+- Prototyping
+- Mind mapping: costruzione di mappe concettuali nel contesto del sistema
+- Elicitation Checklist: lista di tipiche caratteristiche/aspetti/funzionalità/tipologie/. . . In un particolare contesto applicativo
+### L'intervista
+Meeting nel quale si ha interazione con i vari attori. Obiettivo è mettere l’attore in una condizione di massimo agio in modo che possa esprimersi nel modo che più sente naturale rispetto ai requisiti del sistema, senza remore.
+- Interviste “standardized”: l’analista prepara domande a cui l’intervistato potrà rispondere fornendo il suo punto di vista.
+- Interviste esplorative: in questo caso l’analista intende meglio comprendere specifici aspetti del sistema. Partendo da domande congegnate dall’analista, il discorso può spaziare al fine di chiarire gli aspetti oggetto dell’intervista.
+- Interviste non strutturate (Non strutturate): si procede ad una discussione che è principalmente guidata dall’intervistato
+#### preparazione intervista
+- Definire l'obbiettivo dell'intervista: ad esempio
+- Selezione ed invito dei partecipanti
+- Selezione del luogo dell'intervista
+- Definizione delle domande
+In generale è utile aver informazioni sull'intervistato.
+#### esecuzione intervista
+- Apertura introdurre obbiettivi e motivazioni
+- Conduzione e comodo aiutarsi con modelli, è importante dare feedback, attenzione alla comunicazione non verbale, fare pause, e comunque cercare sempre di riportare il fuoco sull'obbiettivo dell'intervista 
+- Chiusura un breve sommario finale di quanto scoperto e dei punti salienti
+#### followup intervista
+- Rielaborazione: l materiale va riorganizzato e vanno definiti nel dettaglio i requisiti, gli scenari e i modelli che definiscono il sistema.
+- Identificazione di gaps: aspetti del sistema che risultano essere ancora poco chiari e esplorati
+- Comunicazione agli intervistati al fine di confermare i risultati
+## intervista – benefici e sforzo richiesto
+
+Le interviste sono uno strumento **efficace per ottenere le necessità principali dei committenti**. Sono particolarmente utili per raccogliere requisiti già noti agli stakeholder, chiarire obiettivi, vincoli e il contesto operativo del sistema.
+
+Tuttavia **non rappresentano lo strumento principale** per identificare **requisiti innovativi o radicalmente nuovi**, poiché gli intervistati tendono a descrivere ciò che già conoscono.
+
+Lo **sforzo richiesto** può essere **medio o alto**, e dipende dal:
+
+- Numero di attori coinvolti;
+- Eterogeneità degli stakeholder;
+- Metodologia di intervista adottata (strutturata, esplorativa, non strutturata);
+- Necessità di follow-up e rielaborazione dettagliata del materiale raccolto.
+## L’intervista – fattori critici di successo
+Ali fattori si riferiscono principalmente alle caratteristiche dell’intervistatore che deve essere estremamente aperto e cercare di cogliere al meglio ali aspetti socio-antropologici dell’attività e dunque mettere in atto tutte le strategie per far emergere le necessità principali e innovative.
+### Workshops 
+In un workshop (WKS) un gruppo di stakeholder lavora insieme per sviluppare i requisiti del sistema. Si tratta di un'attività di gruppo, molto efficace, specialmente quando serve far emergere punti di vista differenti e conflitti. Le tecniche accessorie tipicamente usate includono: Brainstorming KJ Method Definizione iterativa di scenari
+### Workshop – preparazione
+Elementi fondamentali:
+- Definizione chiara degli obiettivi del workshop.
+- Scelta delle tecniche da utilizzare (Brainstorming, KJ, discussioni guidate, scenari, suddivisione in sottogruppi).
+- Scelta e invito dei partecipanti, e accordo sugli obiettivi.
+- Scelta del luogo.
+- Identificazione di:
+    - Un **moderatore**;
+    - Un **minute-taker** (segretario incaricato del verbale).
+### Workshop - esecuzione
+- **Apertura**: presentazione degli obiettivi, tecniche da usare, agenda e regole di interazione.
+- **Conduzione**: il moderatore applica le tecniche e fa rispettare le regole; il minute-taker registra tutte le informazioni rilevanti.
+- **Chiusura**: raccolta dei risultati, esposizione sommaria, identificazione di attività successive per chiarire punti aperti.
+### Workshop - follow-up
+Le minute vengono riorganizzate dal segretario e fatte circolare tra i partecipanti che possono richiedere modifiche. Le possibili problematiche evidenziate al termine dell’esecuzione vengono gestite così come eventuali gap.
+### Workshop - benefici e sforzo richiesto
+Tecnica molto efficace per poter identificare tutte le tipologie di requisiti e in particolare per identificare aspetti innovativi. D’altra parte lo sforzo richiesto è generalmente alto, se non molto alto, vista la partecipazione di molti stakeholder
+### Workshop - fattori critici di successo
+- Scelta adeguata dei partecipanti.
+- Capacità del moderatore di far rispettare regole e tecniche.
+- Motivazione dei partecipanti.
+- Scelta del luogo.
+### Tecnica accessoria - KJ Method
+Tecnica accessoria utile per far emergere requisiti da un gruppo eterogeneo.  
+Si struttura in due fasi:
+1. **Riflessione individuale**.
+2. **Lavoro di gruppo**.
+### KJ Method - esecuzione
+- Apertura: si presentano gli obiettivi dell’attività Conduzione 
+	- Riflessione individuale e scrittura delle carte: ogn partecipante singolarmente riflette e identifica caratteristiche ritenute rilevanti. Tali caratteristiche vengono riportate su di una carta (post-it) 
+	- Presentazione e discussione delle carte: Le carte vengono prese dal moderatore e lette ad alta voce. I partecipanti possono porre domande e richiedere chiarimenti 
+	- Raggruppamento e sintesi: le carte ritenute rilevanti vengono raggruppate considerando la possibilità che si riferiscano a tematiche omogenee del sistema 
+- Chiusura: il gruppo definisce come procedere con ulteriori attività per la rielaborazione dei risultati
+### KJ method - follow up, sforzo e fattori critici
+- Definizione del verbale e sua condivisione e accettazione
+- Generalmente richiede uno sforzo limitato
+- Il successo dipende dalla partecipazione di un numero non troppo elevato di stakeholder, dalla selezione dei partecipanti e dalla chiara definizione degli obiettivi
+Particolarmente efficace quanto i partecipanti sono eterogenei e non si conoscono tra di loro. In tal caso potrebbero avere difficoltà ad esprimersi apertamente durante una discussione aperta
+### Formato definizione requisiti
+Informazioni minime da riportare in un formato strutturato per la specifi di requisiti:
+**ID**: “Identificativo unico - scegliete formato utile agli scopi”
+**Nome**: “Nome Mnemonico tipicamente azione nome” Il “Sistema o parte di esso” Deve/Dovrebbe/Può/Potrebbe “descrizione funzionalità”
+**Descrizione**: fornisce ulteriori indicazioni che servono a migliorare comprensione del requisito
+**Sorgente**: chi o cosa ha originato il requisito?
+### Documentazione dei Requisiti
+- Definite un formato standard per la definizione dei requisiti
+- Utilizzate linguaggio consistentemente - attenzione alle parole “deve”, “dovrebbe”
+- The MoSCoW principle
+- Utilizzate meccanismi di evidenziazione del testo
+- Per requisiti utente: non usare, per quanto possibile, gergo Tecnico del dominio informatico.
+### Formato VOLERE
+![[Pasted image 20251125222212.png]]
+### Scoperta dei requisiti (descrizione di scenari)
+Attori trovano più semplice dire come intendono utilizzare il sistema o come credono debba essere utilizzato. È più semplice criticare l’uso del sistema che un singolo requisito. Elicitazione di requisiti tramite descrizione di scenari d’uso Nella forma più generale uno scenario comprende:
+- Cosa ci si aspetta quando lo scenario parte
+- La descrizione del flusso normale dello scenario
+- Descrizione di cosa può andar male nell’esecuzione del flusso normale
+- Informazione su attività che potrebbero svolgersi in parallelo
+- Una descrizione dello stato del sistema alla fine
+### Limitazioni dello strumento degli Scenari
+Molto efficaci per raccogliere requisiti da punti di vista diretti Non adatto a rappresentare requisiti derivanti da punti di vista indiretti o di dominio e a definire requisiti extra-funzionali (caratteristiche globali)
+### Specifica dei punti di interazione
+Praticamente tutti i sistemi software si trovano ad interagire con altri sistemi software. Le interfacce di interazione devono essere definite formalmente: 
+- Application Programming Interface (API) 
+- Strutture dati 
+- Rappresentazione dei dati
+### Documento dei requisiti software
+Il documento dei requisiti software è ciò che deve essere implementato dagli sviluppatori. Contiene generalmente sia requisiti utente che di sistema. Differenti utenti . . . Differenti “requisiti” . . . Differenti formati Formato dipendente anche da processo adottato! Metodologie agili in molti casi suggeriscono di non derivare un documento dei requisiti ma di annotarli su apposite cards che verranno poi prioritizzate.
+### Negoziazione e prioritizzazione
+- Sono attività che richiedono la gestione dei requisiti in particolare in caso di conflitti. 
+- Necessità di prioritizzare per poter organizzare le attività e poter identificare gli aspetti più critici
+### Validazione dei requisiti
+La fase di validazione dei requisiti cerca di rimuovere possibili problemi nella specifica dei requisiti. Possibili verifiche sono:
+- Controllo di validità: verificare che ciò che è stato specificato coincide 
+- Controllo di consistenza: i requisiti non devono essere contradditori
+- Controllo di completezza: i requisiti dovrebbero specificare tutte le possibili funzionalità
+- Controllo di concretezza: verificare che il requisito richieda qualcosa che effettivamente possa essere implementato date anche le tecnologie adottate, i costi e le scadenze imposte
+- Verificabilità: requisiti devono essere scritti in modo da poter verificare la loro soddisfazione.
+Le tecniche standard che si utilizzano per la validazione dei requisiti sono:
+- Revisione dei requisiti: processo manuale che coinvolge team misti cliente/contractor. Può essere formale o informale. Verifiche che potrebbero essere fatte includono:
+	- Verificabilità
+	- Comprensibilità
+	- Tracciabilità
+	- Adattabilità
+- Prototipizzazione
+- Generazione di casi di test
+### Gestione dei requisiti
+Requisiti sono costantemente sottoposti a spinte di cambiamento. Il requisito una volta definito non è fissato per sempre, che considerando non solo le fasi di post-rilascio. Molte motivazioni per questo:
+- Comunità estesa di utenti con richieste differenti ed anche conflittuali
+- Acquirenti ed utenti diretti spesso non sono la stessa entità
+- L'ambiente di esecuzione cambia velocemente
+L'attività di gestione dei requisiti si occupa di far emergere, premettere e gestire modifiche ai requisiti
+- Identificazione dei requisiti tramite ad esempio definizione di ID
+- Definire un processo di modifica dei requisiti: tutte le modifiche sono trattate egualmente e consistentemente
+- Definire meccanismi di tracciabilità
+- Uso e supporto da parte di CASE tool/environment (database, fogli elettronici etc. possono essere sufficienti)
+### Tracciabilità dei requisiti
+Esistono differenti tipi di tracciabilità, tipicamente si immagazzinano le informazioni in una matrice:
+- Sorgente: Attore x requisito
+- Relazioni con altri requisiti: Requisito x Requisito
+- Design: sottosistema x requisito
+Matrici possono diventare particolarmente estese e poco gestibili. 
+### Attività di gestione delle modifiche
+L'attività di gestione della modifica dei requisiti sarà strutturata su sotto-attività quali:
+- Analisi del problema e specifica della modifica
+- Analisi del cambiamento e valutazione del costo
+- Implementazione della modifica
