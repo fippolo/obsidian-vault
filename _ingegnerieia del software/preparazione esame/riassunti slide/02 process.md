@@ -2,7 +2,7 @@
 il **ciclo di vita di un software** è insieme degli stati che un prodotto attraversa dal concepimento alla dismissione.
 Un **processo di sviluppo software** si occupa delle strategie da adottare per la gestione del ciclo di vita di un prodotto software . In particolare identifica quando e chi deve fare cosa per raggiungere un determinato obbiettivo della gestione del ciclo di vita.
 ## 2. Process Activities
-Tipicamente i differenti processi software si distinguono in base alla organizzazione delle differenti attività di sviluppo ([workflow perspective]([[01 introduzione#3.4.1 processo - process perspective]])) e da documenti/modelli che queste attività producono ([data-flow perspective]([[01 introduzione#3.4.1 processo - process perspective]]))
+Tipicamente i differenti processi software si distinguono in base alla organizzazione delle differenti attività di sviluppo ([[01 introduzione#3.4.1 processo - process perspective|workflow perspective]]) e da documenti/modelli che queste attività producono ([[01 introduzione#3.4.1 processo - process perspective|data flow perspective]])
 
 ### 2.1 Attività principali:
 #### 2.1.1 Comunicazione 
