@@ -39,3 +39,69 @@ I motori moderni usano il JIT just in time compiling
 
 ## CORS
 
+Il Cross-Origin Resource Sharing (CORS) è un meccanismo che usa header HTTP addizionali per indicare a un browser che un'applicazione Web in esecuzione su un'origine (dominio)
+Dispone dell'autorizzazione per accedere alle risorse selezionate da un server di origine diversa.
+Un'applicazione web invia una cross-origin HTTP request quando richiede una risorsa che ha un'origine (protocollo, dominio e porta) differente dalla propria.
+Esempio di cross-origin request: Il codice Javascript di frontend per un'applicazione web servita da http://domain-a.com utilizza XMLHttpRequest per inviare una richiesta
+A http://api.Domain-b.Com/data.Json .
+
+
+## REST
+REST sta per **Representational State Transfer** ed è uno stile architetturale usato per progettare servizi web che permettono a sistemi diversi di comunicare tra loro tramite HTTP.
+
+In pratica, quando si parla di “REST”, quasi sempre si intende **API REST**, cioè interfacce che consentono a un client (browser, app mobile, altro server) di richiedere o modificare dati su un server in modo standardizzato.
+
+## PWA progressive web app
+ termine Progressive Web App (PWA, applicazioni web
+Progressive) viene utilizzato per indicare una nuova metodologia per sviluppare software. Diversamente dalle applicazioni tradizionali, le progressive web apps sono un ibrido tra le normali pagine web (o siti web) e le applicazioni mobili. Questo nuovo modello di applicazioni cerca di combinare le possibilità offerte dalla maggior parte dei moderni browser con i benefici dell'utilizzo In mobilità.
+Le **Progressive Web App** sono applicazioni web che si comportano come app native, ma funzionano tramite il browser. In pratica sono **siti web avanzati** che possono essere installati sul telefono o sul computer e usati anche offline.
+
+L’obiettivo è unire i vantaggi del web (accesso immediato, niente store obbligatorio) con quelli delle app native (velocità, notifiche, esperienza “app-like”).
+
+## hydration
+**Cos’è l’hydration (nel web development)**
+
+Nel contesto dello sviluppo web, **hydration** è il processo con cui il **JavaScript “attiva” una pagina HTML già renderizzata**, rendendola interattiva.
+
+Succede soprattutto nelle applicazioni che usano **Server-Side Rendering (SSR)** o **Static Site Generation (SSG)**, come con React, Next.js, Nuxt, Angular Universal.
+
+**Il problema che risolve**
+
+Normalmente una SPA (Single Page Application) funziona così:
+
+- Il browser scarica JavaScript
+    
+- Il JS genera l’HTML
+    
+- La pagina appare
+    
+- L’utente può interagire
+    
+
+Questo però è lento.
+
+Con SSR:
+
+- Il server invia **HTML già pronto**
+    
+- La pagina appare subito
+    
+- Ma inizialmente è solo “statica” (niente click, eventi, stato React)
+    
+
+Qui entra in gioco l’hydration.
+
+**Cosa fa l’hydration**
+
+L’hydration:
+
+- Collega il JavaScript ai nodi HTML già presenti
+    
+- Aggancia event listener (click, input, submit)
+    
+- Ripristina lo stato dei componenti
+    
+- Rende la UI interattiva
+    
+
+Importante: **non ricrea il DOM da zero**, ma riutilizza quello esistente.
