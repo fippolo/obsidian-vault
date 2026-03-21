@@ -23,4 +23,4 @@ I suggest to check out [golem](https://golem.hu/guide/keyboard-matrix/) for furt
 
 So now i can start to think about the firmware, i would like to run [KMK firmware](https://github.com/KMKfw/kmk_firmware) since i have it on my main keyboard and i am very pleased with it.
 
-I was able to load 
+I was able to load circuit python through [this guide](https://learn.adafruit.com/circuitpython-with-esp32-quick-start/overview) 
