@@ -19,5 +19,7 @@ The problem with this is that if you press both (r1,c1) and (r2,c2) both (r1,c2)
 Then i can connect every raw and column to the micro controller like this
 ![[Pasted image 20260321151009.png]]![[Pasted image 20260321151017.png]]
 The power side is wired like this ![[Pasted image 20260321151054.png]]
-So now i can start developing the firmware
+I suggest to check out [golem](https://golem.hu/guide/keyboard-matrix/) for further reading
+
+So now i can start to think about the firmware, i would like to run [KMK firmware](https://github.com/KMKfw/kmk_firmware) since i have it on my main keyboard and i am very pleased with it
 
