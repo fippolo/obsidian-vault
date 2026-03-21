@@ -15,4 +15,9 @@ I finalised the design adding some mounting point for the eventual back cover an
 Let's quickly go over how it works:
 The switches are not connected each to a gpio but they are arranged into a matrix where each column and each row are connected together like this
 ![[Pasted image 20260321150549.png]]
-The problem with this is that if you press both (r1,c1) and (r2,c2) both (r1,c2) and (r2,c1) will result as pressed, this is called ghosting, we can avoid this behavior by making the grid on
+The problem with this is that if you press both (r1,c1) and (r2,c2) both (r1,c2) and (r2,c1) will result as pressed, this is called ghosting, we can avoid this behavior by making the grid "one way" by adding diodes on the rowes like this:![[Pasted image 20260321150920.png]]
+Then i can connect every raw and column to the micro controller like this
+![[Pasted image 20260321151009.png]]![[Pasted image 20260321151017.png]]
+The power side is wired like this ![[Pasted image 20260321151054.png]]
+So now i can start developing the firmware
+
