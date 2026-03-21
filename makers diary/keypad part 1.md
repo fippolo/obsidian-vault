@@ -21,5 +21,6 @@ Then i can connect every raw and column to the micro controller like this
 The power side is wired like this ![[Pasted image 20260321151054.png]]
 I suggest to check out [golem](https://golem.hu/guide/keyboard-matrix/) for further reading
 
-So now i can start to think about the firmware, i would like to run [KMK firmware](https://github.com/KMKfw/kmk_firmware) since i have it on my main keyboard and i am very pleased with it
+So now i can start to think about the firmware, i would like to run [KMK firmware](https://github.com/KMKfw/kmk_firmware) since i have it on my main keyboard and i am very pleased with it.
 
+I was able to load 
