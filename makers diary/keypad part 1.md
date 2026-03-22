@@ -26,4 +26,4 @@ So now i can start to think about the firmware, i would like to run [KMK firmwar
 I was able to load circuit python through [this guide](https://learn.adafruit.com/circuitpython-with-esp32-quick-start/overview) 
 
 ## 17:00
-With the heavy use of
+With the heavy use of codex i was able to adapt an implementation of kmk firmware to work with the limited memory this micro controller has available the full firmware is available at this [github repository](https://github.com/fippolo/kmk-esp)  and now everything works and i should be able to start making macros as i see fit
